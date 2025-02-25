@@ -1,6 +1,8 @@
 # IOT-arduino-android-app-RMIC
 RMIC- IOT plant automatic water machine (arduino and android app)
-For details plz go to
+For details plz go to:
+
+
 ---RMIC-Final-grupo_9
     |
     - - ->Sensores utilizados (for hardware details)
