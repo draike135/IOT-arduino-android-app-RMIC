@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-125dp"
+        android:layout_marginBottom="112dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/circular_slider"
+        app:layout_constraintEnd_toStartOf="@+id/circular_slider" />
+
+    <TextView
+        android:id="@+id/pump_the"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="344dp"
+        android:text="Pump humidity treshhold:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="359dp"
+        android:text="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pump_att" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="631dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Air_hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="291dp"
+        android:text="Air Humidity:0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/Air_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="200dp"
+        android:text="Air Temperature:0"
+        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/soil_hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="285dp"
+        android:text="Soil Humidity:0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Air_tmp" />
+
+    <TextView
+        android:id="@+id/Pump_att"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="296dp"
+        android:text="Pump status:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soil_hum" />
+
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="275dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:min="150"
+        android:max="750"
+        android:progress="400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pump_the" />
+
+    <me.tankery.lib.circularseekbar.CircularSeekBar
+        android:id="@+id/circular_slider"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="40dp"
+        app:cs_circle_color="@android:color/holo_green_dark"
+        app:cs_circle_progress_color="@android:color/holo_green_light"
+        app:cs_circle_stroke_width="4dp"
+        app:cs_circle_style="square"
+        app:cs_circle_x_radius="0dp"
+        app:cs_circle_y_radius="0dp"
+        app:cs_disable_pointer="false"
+        app:cs_disable_progress_glow="true"
+        app:cs_hide_progress_when_empty="true"
+        app:cs_lock_enabled="true"
+        app:cs_maintain_equal_circle="true"
+        app:cs_max="100"
+        app:cs_move_outside_circle="true"
+        app:cs_negative_enabled="false"
+        app:cs_pointer_alpha_ontouch="5"
+        app:cs_pointer_angle="10"
+        app:cs_pointer_color="@android:color/holo_green_light"
+        app:cs_pointer_halo_color="@android:color/holo_green_dark"
+        app:cs_pointer_halo_color_ontouch="@android:color/holo_green_dark"
+        app:cs_pointer_stroke_width="20dp"
+        app:cs_progress="70"
+        app:cs_use_custom_radii="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+    <TextView
+        android:id="@+id/HEADEr"
+        android:layout_width="176dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:text="winklers"
+        android:textSize="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
