@@ -11,16 +11,16 @@
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
 
-//#define WIFI_SSID "MEO-250BCD"
-//#define WIFI_PASSWORD "0071F7FF8B"
+//#define WIFI_SSID "yyyy-yyyy"
+//#define WIFI_PASSWORD "yyyyyyy"
 
 
 #define WIFI_SSID "Labs-LSD"
 #define WIFI_PASSWORD "aulaslsd"
 
 
-#define API_KEY "AIzaSyAGC8FEQ0K9qsYKOnWw1KM5oTQoJ68sAWY"
-#define DATABASE_URL "https://iot-alarm-app-165dc-default-rtdb.europe-west1.firebasedatabase.app/"
+#define API_KEY "your"
+#define DATABASE_URL "your"
 
 #define STEPS 200 
 #define PWM D1
